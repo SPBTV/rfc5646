@@ -1,0 +1,13 @@
+sudo: false
+language: ruby
+rvm:
+  - 2.2.2
+  - ruby-head
+matrix:
+  allow_failures:
+    - rvm: ruby-head
+  fast_finish: true
+before_install: gem install bundler -v 1.10.6
+script:
+  - bundle exec rake spec
+  - bundle exec rubocop
