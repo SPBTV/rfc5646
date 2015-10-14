@@ -1,5 +1,7 @@
-# Rfc5646
+[![Build Status](https://travis-ci.org/SPBTV/rfc5646.svg)](https://travis-ci.org/SPBTV/rfc5646)
+[![Gem Version](https://badge.fury.io/rb/rfc5646.svg)](https://badge.fury.io/rb/rfc5646)
 
+# Rfc5646
 
 Parse [RFC 5646](http://tools.ietf.org/html/rfc5646) locales. 
 This code extracted from [shuttle](https://github.com/square/shuttle) codebase.
