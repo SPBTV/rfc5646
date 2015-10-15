@@ -64,11 +64,10 @@ module Rfc5646
     class << self
       # Generates a new instance from an RFC 5646 code.
       #
-      # @param [String] ident The RFC 5646 code for the locale.
+      # @param [String, nil] ident The RFC 5646 code for the locale.
       # @return [Locale] The instance representing that locale.
-
       def from_rfc5646(ident)
-        ident = ident.tr('_', '-')
+        ident = String(ident).tr('_', '-')
         return nil unless (matches = RFC5646_FORMAT.match(ident))
         attrs = RFC5646_FORMAT.named_captures.each_with_object({}) do |(name, offsets), hsh|
           hsh[name] = offsets.map { |offset| matches[offset] }.compact
