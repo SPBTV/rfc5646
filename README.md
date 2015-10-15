@@ -23,7 +23,7 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-locale == Rfc5646::Locale.from_rfc5646(params[:locale])
+locale = Rfc5646::Locale.from_rfc5646(params[:locale])
 ```
 
 The ISO 639 code for the base language (e.g., "de" for German).
