@@ -81,6 +81,16 @@ RSpec.describe Rfc5646::Locale do
       expect(locale.extended_language).to be_nil
       expect(locale.extensions).to eql([])
     end
+
+    it 'should return `nil` when `nil` given' do
+      locale = Locale.from_rfc5646(nil)
+      expect(locale).to be_nil
+    end
+
+    it 'should return `nil` when empty string given' do
+      locale = Locale.from_rfc5646('')
+      expect(locale).to be_nil
+    end
   end
 
   describe '#rfc5646' do
