@@ -2,8 +2,6 @@ require 'active_support/core_ext/object/try'
 require 'active_support/core_ext/object/blank'
 require 'i18n'
 
-I18n.backend.load_translations('config/locales/locales.en.yml')
-
 module Rfc5646
   # Represents a locale that can be localized to. Locales are identified by
   # their RFC 5646 code, which can be as simple as just a language (e.g., "en" for
