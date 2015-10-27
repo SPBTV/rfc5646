@@ -3,7 +3,7 @@
 
 # Rfc5646
 
-Parse [RFC 5646](http://tools.ietf.org/html/rfc5646) locales. 
+Parse [RFC 5646](http://tools.ietf.org/html/rfc5646) locales.
 This code extracted from [shuttle](https://github.com/square/shuttle) codebase.
 
 Add this line to your application's Gemfile:
@@ -38,31 +38,31 @@ The RFC 5646 code for the orthography (e.g., "Arab" for Arabic script).
 locale.script
 ```
 
-The ISO 3166 country code for the regional dialect (e.g., "BZ" for Belize). Some special 
+The ISO 3166 country code for the regional dialect (e.g., "BZ" for Belize). Some special
 values are also supported (e.g., "013" for Central America).
 
 ```ruby
 locale.region
 ```
 
-The variant or nested subvariant of this locale. The full path to a subvariant is listed as 
-a top-level Array; an example is `["sl", "rozaj", "1994"]`, indicating the 1994 standardization of the 
-Resian orthography of the Rozaj dialect of Slovenian (in case we should ever want to localize one of 
-our projects thusly). Variants can be regional or temporal dialects, or orthographies, or both, 
+The variant or nested subvariant of this locale. The full path to a subvariant is listed as
+a top-level Array; an example is `["sl", "rozaj", "1994"]`, indicating the 1994 standardization of the
+Resian orthography of the Rozaj dialect of Slovenian (in case we should ever want to localize one of
+our projects thusly). Variants can be regional or temporal dialects, or orthographies, or both,
 and are very specific.
 
 ```ruby
 locale.variants
 ```
 
-The dialect (not associated with a specific region or period in time) specifier. For example, 
+The dialect (not associated with a specific region or period in time) specifier. For example,
 "yue" indicates Yue Chinese (Cantonese).
 
 ```ruby
 locale.extended_language
 ```
 
-The user-defined extensions applied to this locale. The meaning of these is not specified in 
+The user-defined extensions applied to this locale. The meaning of these is not specified in
 the spec, and left up to private use, and is ignored by this class, but stored for completeness.
 
 ```ruby
@@ -80,7 +80,14 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 Bug reports and pull requests are welcome on GitHub at https://github.com/SPBTV/rfc5646. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org/) code of conduct.
 
 
-## License
+##License
 
-The gem is available as open source under the terms of the [Apache 2.0](http://www.apache.org/licenses/).
+Copyright 2015 SPB TV AG
 
+Licensed under the Apache License, Version 2.0 (the ["License"](LICENSE)); you may not use this file except in compliance with the License.
+
+You may obtain a copy of the License at [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+See the License for the specific language governing permissions and limitations under the License.
